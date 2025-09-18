@@ -9,4 +9,6 @@ pyaml
 dagshub
 fastapi
 uvicorn
+setuptools>=65.0.0
+python-multipart
 #-e .
