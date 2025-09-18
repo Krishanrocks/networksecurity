@@ -2,8 +2,8 @@ from dataclasses import dataclass
 
 @dataclass
 class DataIngestionArtifact:
-    trained_file_path:str
-    test_file_path:str
+    trained_file_path: str
+    test_file_path: str
 
 @dataclass
 class DataValidationArtifact:
@@ -25,9 +25,9 @@ class ClassificationMetricArtifact:
     f1_score: float
     precision_score: float
     recall_score: float
-    
+
 @dataclass
 class ModelTrainerArtifact:
-    trained_model_file_path: str
+    model_path: str  # 🔁 Renamed from trained_model_file_path
     train_metric_artifact: ClassificationMetricArtifact
     test_metric_artifact: ClassificationMetricArtifact
